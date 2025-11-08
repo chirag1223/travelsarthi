@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./Logo_top.svg" type="image/x-icon">
     <title>Coming Soon - Explore The World</title>
     <style>
       * {
@@ -14,6 +16,7 @@
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        overflow: hidden;
       }
 
       #canvas {
@@ -415,6 +418,7 @@
       // Note: The launch date is Dec 31, 2025.
       // Today is Nov 8, 2025, so the countdown will show ~53 days.
       const launchDate = new Date("2025-11-20T23:59:59").getTime();
+
 
       // --- ADDED ---
       // Load the tick sound. Using a Base64-encoded sound means you don't need a separate audio file.
