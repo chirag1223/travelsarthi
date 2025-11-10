@@ -1,0 +1,198 @@
+ 
+    <%- include('partials/header') %>
+
+  <main class="main">
+
+    <section id="hero" class="hero section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+              <div class="company-badge mb-4">
+                <i class="bi bi-airplane-fill me-2"></i>
+                Your Adventure Awaits
+              </div>
+
+              <h1 class="mb-4">
+                Discover Your Next
+                <span class="accent-text"> Great Adventure</span>
+              </h1>
+
+              <p class="mb-4 mb-md-5">
+                From snowy mountains to sunny beaches, we craft unforgettable journeys. Let us plan your perfect
+                getaway, tailored just for you.
+              </p>
+
+              <div class="hero-buttons">
+                <a href="#features-2" class="btn btn-primary me-0 me-sm-2 mx-1">Explore Tours</a>
+                <a href=" " class="btn btn-link mt-2 mt-sm-0 glightbox">
+                  <i class="bi bi-play-circle me-1"></i>
+                  See Our Adventures
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="hero-image" data-aos="zoom-out" data-aos-delay="300">
+              <img src="/img/illustration-1.webp" alt="Hero Image" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+    
+    <div class="container my-5">
+      <div class="contact_main-content shadow-lg">
+        <div class="row g-0">
+
+          <div class="col-lg-4 contact_sidebar">
+            <div class="contact_sidebar-content">
+              <div class="contact_office-section mb-4">
+                <h5 class="mb-3"><i class="fas fa-building me-2"></i> Registered Office</h5>
+                <h6 class="fw-bold">Jaipur</h6>
+                <p class="mb-2">
+                  Travel Sathi Holidays Pvt. Ltd.<br>
+                  303, C-02 , VPM Building,<br>
+                  Near Hotel Hayat , Iskon Road , Mansarover<br>
+                  Jaipur 302020
+                </p>
+                <p class="mb-2">
+                  <i class="fas fa-phone-alt"></i>+91-96021-56183
+                </p>
+                <p>
+                  <i class="fas fa-envelope"></i> &nbsp;info@travelsarthi.com
+                </p>
+              </div>
+
+              <hr>
+
+            </div>
+          </div>
+
+          <div class="col-lg-8 contact_main-form">
+            <h2 class="fw-bold mb-2">Get a Free Quote</h2>
+            <p class="text-muted mb-4">Please fill in the form below to get in touch with us.</p>
+
+            <form>
+              <div class="row g-3">
+
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name*</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="phone" class="form-label">Phone*</label>
+                  <div class="input-group">
+                    <span class="input-group-text">🇮🇳</span>
+                    <input type="tel" class="form-control" id="phone" required>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email*</label>
+                  <input type="email" class="form-control" id="email" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="travel-destination" class="form-label">Travelling to?*</label>
+                  <select class="form-select" id="travel-destination" required>
+                    <option value="" disabled selected>Select Destination</option>
+                    <option value="Paris">Paris</option>
+                    <option value="New York">New York</option>
+                    <option value="Tokyo">Tokyo</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="start-date" class="form-label">Trip Start Date*</label>
+                  <input type="date" class="form-control" id="start-date" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="nights" class="form-label">No. of Nights*</label>
+                  <select class="form-select" id="nights" required>
+                    <option value="" disabled selected>Select No of Nights</option>
+                    <option value="1">1 Night</option>
+                    <option value="2">2 Nights</option>
+                    <option value="3">3 Nights</option>
+                    <option value="4">4 Nights</option>
+                    <option value="5+">5+ Nights</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="connect-time" class="form-label">Best Time To Connect</label>
+                  <select class="form-select" id="connect-time">
+                    <option value="" disabled selected>Select Time</option>
+                    <option value="Morning">Morning (9am-12pm)</option>
+                    <option value="Afternoon">Afternoon (1pm-5pm)</option>
+                    <option value="Evening">Evening (6pm-9pm)</option>
+                  </select>
+                </div>
+                
+                <div class="col-md-6">
+                  <label for="hotel-type" class="form-label">Preferred Hotel Type</label>
+                  <select class="form-select" id="hotel-type">
+                    <option value="" disabled selected>Select Hotel Type</option>
+                    <option value="Budget">Budget</option>
+                    <option value="Mid-range">Mid-range</option>
+                    <option value="Luxury">Luxury</option>
+                    <option value="Boutique">Boutique</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="message" class="form-label">Write a Message</label>
+                  <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+
+                <div class="col-12">
+                  <button type="submit" class="btn contact_btn-submit">Submit <i class="fas fa-chevron-right fa-xs"></i></button>
+                </div>
+              </div>
+            </form>
+
+            <div class="row g-0 contact_image-gallery mt-4">
+              <div class="col">
+                <img src="/img/MANALI.jpg" alt="Tour Image 1">
+              </div>
+              <div class="col">
+                <img src="/img/Kashmir/Kashmir/Shikara-boats-floating-on-Dal-Lake.jpg" alt="Tour Image 2">
+              </div>
+              <div class="col">
+                <img src="/img/Kashmir/Kashmir/Places_to_Visit_in_Kashmir_600x400.jpg" alt="Tour Image 3">
+              </div>
+              <div class="col">
+                <img src="/img/Himachal/Himachal/shimla-kullu-manali-tour-package-oikj.jpg" alt="Tour Image 4">
+              </div>
+              <div class="col">
+                <img src="/img/Andaman/Andaman/Cellular-Jail-.jpg" alt="Tour Image 5">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="contact_map-section shadow-lg mt-5">
+        <iframe 
+          src="https:/www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.918809201991!2d75.76019967520935!3d26.874136476669925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5ac34533b6b%3A0x1d3a33dc0336043!2sVPM%20BUILDING!5e0!3m2!1sen!2sin!4v1731213568285!5m2!1sen!2sin" 
+          width="100%" 
+          height="450" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+
+  </main>
+    <%- include('partials/footer') %>
