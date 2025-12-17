@@ -1,0 +1,174 @@
+<div id="hotels" class="page-transition">
+        <section class="relative min-h-[50vh] flex items-center justify-center pt-20">
+            <div class="absolute inset-0 z-0">
+                <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2000&auto=format&fit=crop"
+                    class="h-full w-full object-cover" alt="Luxury Hotel">
+                <div class="hero-overlay absolute inset-0"></div>
+            </div>
+            <div class="container relative z-10 mx-auto px-4 text-center text-white">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Find Your Perfect Stay</h1>
+                <p class="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto drop-shadow-md">Discover hotels, resorts,
+                    and unique accommodations worldwide</p>
+            </div>
+        </section>
+
+        <section class="py-12 bg-slate-50">
+            <div class="container mx-auto px-4">
+                <div class="bg-white rounded-xl shadow-lg p-6 mb-12 -mt-20 relative z-20">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+                        <div>
+                            <label class="text-sm font-medium mb-2 block">Destination</label>
+                            <div class="relative">
+                                <i data-lucide="map-pin"
+                                    class="absolute left-3 top-3 h-4 w-4 text-muted-foreground"></i>
+                                <input type="text" placeholder="Where are you going?"
+                                    class="pl-9 flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium mb-2 block">Check-in</label>
+                            <input type="date"
+                                class="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm">
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium mb-2 block">Check-out</label>
+                            <input type="date"
+                                class="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm">
+                        </div>
+                        <div>
+                            <label class="text-sm font-medium mb-2 block">Guests & Rooms</label>
+                            <select
+                                class="flex h-10 w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm">
+                                <option>1 Room, 2 Adults</option>
+                                <option>1 Room, 1 Adult</option>
+                                <option>2 Rooms, 4 Adults</option>
+                                <option>1 Room, 2 Adults, 1 Child</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="flex justify-end">
+                        <button
+                            class="h-10 inline-flex items-center justify-center rounded-md bg-primary text-primary-foreground text-sm font-medium shadow transition-colors hover:bg-primary/90 px-6">
+                            Search Hotels
+                        </button>
+                    </div>
+                </div>
+
+                <h2 class="text-2xl font-bold mb-6">Featured Hotels</h2>
+                <div class="flex overflow-x-auto gap-6 pb-6 snap-x snap-mandatory scrollbar-hide">
+
+                    <div
+                        class="flex-none w-[85vw] md:w-[350px] snap-center bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop"
+                                class="w-full h-full object-cover" alt="Luxury Hotel">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">The Ritz Carlton</h3>
+                                <div class="text-right">
+                                    <p class="text-xs text-slate-500 line-through">$450/night</p>
+                                    <p class="font-bold text-primary">$399/night</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-slate-500 text-sm mb-3">
+                                <i data-lucide="map-pin" class="h-3 w-3 mr-1"></i> New York, NY
+                            </div>
+                            <div class="flex items-center text-sm mb-4">
+                                <span class="flex items-center text-slate-600"><i data-lucide="star"
+                                        class="h-3 w-3 text-yellow-400 mr-1 fill-yellow-400"></i> 4.8 (2.4k
+                                    reviews)</span>
+                            </div>
+                            <button
+                                class="w-full h-9 inline-flex items-center justify-center rounded-md border border-input bg-white text-sm font-medium shadow-sm hover:bg-slate-50 transition-colors">View
+                                Details</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex-none w-[85vw] md:w-[350px] snap-center bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=600&auto=format&fit=crop"
+                                class="w-full h-full object-cover" alt="Boutique Hotel">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Boutique Hotel du Louvre</h3>
+                                <div class="text-right">
+                                    <p class="text-xs text-slate-500 line-through">$320/night</p>
+                                    <p class="font-bold text-primary">$279/night</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-slate-500 text-sm mb-3">
+                                <i data-lucide="map-pin" class="h-3 w-3 mr-1"></i> Paris, France
+                            </div>
+                            <div class="flex items-center text-sm mb-4">
+                                <span class="flex items-center text-slate-600"><i data-lucide="star"
+                                        class="h-3 w-3 text-yellow-400 mr-1 fill-yellow-400"></i> 4.7 (1.8k
+                                    reviews)</span>
+                            </div>
+                            <button
+                                class="w-full h-9 inline-flex items-center justify-center rounded-md border border-input bg-white text-sm font-medium shadow-sm hover:bg-slate-50 transition-colors">View
+                                Details</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex-none w-[85vw] md:w-[350px] snap-center bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=600&auto=format&fit=crop"
+                                class="w-full h-full object-cover" alt="Resort">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Bali Beach Resort</h3>
+                                <div class="text-right">
+                                    <p class="text-xs text-slate-500 line-through">$280/night</p>
+                                    <p class="font-bold text-primary">$229/night</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-slate-500 text-sm mb-3">
+                                <i data-lucide="map-pin" class="h-3 w-3 mr-1"></i> Bali, Indonesia
+                            </div>
+                            <div class="flex items-center text-sm mb-4">
+                                <span class="flex items-center text-slate-600"><i data-lucide="star"
+                                        class="h-3 w-3 text-yellow-400 mr-1 fill-yellow-400"></i> 4.9 (3.2k
+                                    reviews)</span>
+                            </div>
+                            <button
+                                class="w-full h-9 inline-flex items-center justify-center rounded-md border border-input bg-white text-sm font-medium shadow-sm hover:bg-slate-50 transition-colors">View
+                                Details</button>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex-none w-[85vw] md:w-[350px] snap-center bg-white rounded-xl overflow-hidden shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
+                        <div class="h-48 overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=600&auto=format&fit=crop"
+                                class="w-full h-full object-cover" alt="Resort">
+                        </div>
+                        <div class="p-4">
+                            <div class="flex justify-between items-start mb-2">
+                                <h3 class="font-bold text-lg">Bali Beach Resort</h3>
+                                <div class="text-right">
+                                    <p class="text-xs text-slate-500 line-through">$280/night</p>
+                                    <p class="font-bold text-primary">$229/night</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center text-slate-500 text-sm mb-3">
+                                <i data-lucide="map-pin" class="h-3 w-3 mr-1"></i> Bali, Indonesia
+                            </div>
+                            <div class="flex items-center text-sm mb-4">
+                                <span class="flex items-center text-slate-600"><i data-lucide="star"
+                                        class="h-3 w-3 text-yellow-400 mr-1 fill-yellow-400"></i> 4.9 (3.2k
+                                    reviews)</span>
+                            </div>
+                            <button
+                                class="w-full h-9 inline-flex items-center justify-center rounded-md border border-input bg-white text-sm font-medium shadow-sm hover:bg-slate-50 transition-colors">View
+                                Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>

@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "The Ritz Carlton",
+        "location": "New York, NY",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop",
+        "price": "$399",
+        "oldPrice": "$450",
+        "rating": "4.8",
+        "reviews": "2.4k"
+    },
+    {
+        "id": 2,
+        "name": "Boutique Hotel du Louvre",
+        "location": "Paris, France",
+        "image": "https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=600&auto=format&fit=crop",
+        "price": "$279",
+        "oldPrice": "$320",
+        "rating": "4.7",
+        "reviews": "1.8k"
+    },
+    {
+        "id": 3,
+        "name": "Bali Beach Resort",
+        "location": "Bali, Indonesia",
+        "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=600&auto=format&fit=crop",
+        "price": "$229",
+        "oldPrice": "$280",
+        "rating": "4.9",
+        "reviews": "3.2k"
+    },
+    {
+        "id": 4,
+        "name": "Marina Bay Sands",
+        "location": "Singapore",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop",
+        "price": "$489",
+        "oldPrice": "$550",
+        "rating": "4.9",
+        "reviews": "4.1k"
+    },
+    {
+        "id": 5,
+        "name": "Burj Al Arab",
+        "location": "Dubai, UAE",
+        "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=600&auto=format&fit=crop",
+        "price": "$899",
+        "oldPrice": "$1,000",
+        "rating": "4.8",
+        "reviews": "3.5k"
+    }
+]

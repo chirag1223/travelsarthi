@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "title": "Rajasthan, India",
+        "location": "Jaipur - Udaipur - Jodhpur -Jaisalmer",
+        "category": ["Heritage", "Family" , "Couple"],
+        "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=500&auto=format&fit=crop",
+        "price": "Starting From ₹28,883",
+        "oldPrice": "₹35,500",
+        "rating": "4.9",
+        "reviews": "2.8k",
+        "duration": "7 Days Tour",
+        "tag": "Best Seller",
+        "tagColor": "bg-white/90 backdrop-blur text-slate-900"
+    },
+    {
+        "id": 2,
+        "title": "Forts & Legends",
+        "location": "Jaipur - Udaipur",
+        "category": ["Lakes", "Honeymoon"],
+        "image": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?q=80&w=500&auto=format&fit=crop",
+        "price": "Starting From ₹21,583",
+        "oldPrice": "₹27,500",
+        "rating": "4.8",
+        "reviews": "850",
+        "duration": "5 Days Tour",
+        "tag": "15% OFF",
+        "tagColor": "bg-red-500 text-white"
+    },
+    {
+        "id": 3,
+        "title": "Golden Sands, Royal Lands",
+        "location": "Udaipur - Jodhpur - Jaisalmer - Jaipur",
+        "category": ["Blue City , Golden City , Lake City , Pink City"],
+        "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?q=80&w=500&auto=format&fit=crop",
+        "price": "Starting From ₹41,950",
+        "oldPrice": "₹52,100",
+        "rating": "4.9",
+        "reviews": "3.1k",
+        "duration": "9 Days Tour",
+        "tag": "Super Saver",
+        "tagColor": "bg-pink-500 text-white"
+    },
+    {
+        "id": 4,
+        "title": "Feel The Royal Vibe",
+        "location": "Jaipur, Jodhpur, Udaipur",
+        "category": ["Forts", "Royals"],
+        "image": "https://images.unsplash.com/photo-1531366936337-7c912a4589a7?q=80&w=500&auto=format&fit=crop",
+        "price": "Starting From ₹32,183",
+        "oldPrice": "₹38,500",
+        "rating": "5.0",
+        "reviews": "1.2k",
+        "duration": "6 Days Tour",
+        "tag": "Top Rated",
+        "tagColor": "bg-blue-600 text-white"
+    },
+    {
+        "id": 5,
+        "title": "Royal Heritage & Desert Safari",
+        "location": "Jodhpur - Jaisalemr",
+        "category": ["Palace", "Desert"],
+        "image": "https://images.unsplash.com/photo-1516483638261-f4dbaf036963?q=80&w=500&auto=format&fit=crop",
+        "price": "Starting From ₹21,183",
+        "oldPrice": "₹25,500",
+        "rating": "4.7",
+        "reviews": "1.1k",
+        "duration": "4 Days Tour",
+        "tag": "Super Saver",
+        "tagColor": "bg-black text-white"
+    }
+]

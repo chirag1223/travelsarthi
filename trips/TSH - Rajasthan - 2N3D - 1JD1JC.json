@@ -1,0 +1,124 @@
+{
+  "trip_details": {
+    "trip_id": "TSHRI-2N3D-JSJC",
+    "destination": "Rajasthan 1 Night Jaisalmer City – 1 Night Jaisalmer Sam",
+    "validity": "Oct To March (Except Black Out Dates & Long Weekend)",
+    "duration": "02 Nights / 03 Days"
+  },
+  "hotels": {
+    "standard": [
+      {
+        "night": "01 Night",
+        "city": "Jodhpur",
+        "hotel": "Bhagwati Villas / Chandra Inn or Similar",
+        "meal_plan": "Breakfast (CP)"
+      },
+      {
+        "night": "01 Night",
+        "city": "Jaisalmer Sam",
+        "hotel": "Star Desert Camp / or Similar",
+        "meal_plan": "Breakfast & Dinner (MAP)"
+      }
+    ],
+    "deluxe": [
+      {
+        "night": "01 Night",
+        "city": "Jodhpur",
+        "hotel": "Apex International / Chandra Imperial or Similar",
+        "meal_plan": "Breakfast (CP)"
+      },
+      {
+        "night": "01 Night",
+        "city": "Jaisalmer Sam",
+        "hotel": "Khamma Ghanni Desert Camp or Similar",
+        "meal_plan": "Breakfast & Dinner (MAP)"
+      }
+    ],
+    "super_deluxe": [
+      {
+        "night": "01 Night",
+        "city": "Jodhpur",
+        "hotel": "Mapple Abhay / Amritara Manak Haveli or Similar",
+        "meal_plan": "Breakfast (CP)"
+      },
+      {
+        "night": "01 Night",
+        "city": "Jaisalmer Sam",
+        "hotel": "Sia Desert Camp / Desert Gateway Resort or Similar",
+        "meal_plan": "Breakfast & Dinner (MAP)"
+      }
+    ]
+  },
+  "transportation": {
+    "type": "1-A/C Private Vehicle",
+    "daywise_itinerary": [
+      {
+        "day": 1,
+        "city name": "Jaisalmer",
+        "photo": "jaisalmer.jpg",
+        "summary": "Arrival at Jaisalmer & explore local sightseeing including Fort, Havelis and Gadisar Lake.",
+        "detailed": [
+          "Pick up from Jaisalmer Airport / Railway Station.",
+          "Drive directly to Sam Sand Dunes for a unique desert experience.",
+          "Check-in at your luxury desert camp.",
+          "Enjoy Camel Safari on the golden dunes during sunset.",
+          "Experience traditional Rajasthan cultural night with folk dance, music & bonfire.",
+          "Tea/coffee with snacks during the cultural show.",
+          "Enjoy a delicious Rajasthani buffet dinner at the camp.",
+          "Overnight stay at Sam Desert Camp."
+        ]
+      },
+      {
+        "day": 2,
+        "summary": "Jaisalmer local sightseeing and later transfer to Sam for camel safari & desert camp experience.",
+        "detailed": [
+          "After breakfast, depart from Sam and drive toward Jaisalmer city.",
+          "Visit major attractions: Jaisalmer Fort (Sonar Quila), Patwon Ki Haveli, Nathmal Ki Haveli, Gadisar Lake.",
+          "Free time in local markets for shopping.",
+          "Later, drive to Jodhpur (approx. 5 hrs).",
+          "Check-in at hotel & relax.",
+          "Overnight stay in Jodhpur."
+        ]
+      },
+      {
+        "day": 3,
+        "summary": "Departure from Jaisalmer with wonderful memories.",
+        "detailed": [
+          "After breakfast, enjoy Jodhpur’s key attractions: Mehrangarh Fort, Jaswant Thada, Umaid Bhawan Palace (museum), Clock Tower Market.",
+          "After sightseeing, drop at Jodhpur Airport / Railway Station for your onward journey.",
+          "Trip ends with wonderful memories."
+        ]
+      }
+    ]
+  },
+  "inclusions": [
+    "Accommodation as Mentioned in Hotel Section",
+    "Meal Plan as Mentioned in Hotel Section",
+    "All sightseeing as per the attached itinerary",
+    "Private AC Vehicle (Mentioned in Sketch Itinerary)",
+    "Driver Allowance, All Road Permits, and Tolls",
+    "Parking Included at Mentioned Itinerary Points",
+    "Airport Pick Up & Drop",
+    "All Taxes Included",
+    {
+      "camp_inclusions": [
+        "Camel Safari (Short Ride)",
+        "Dinner During Stay in Camp",
+        "Welcome with Dhol & Tikka",
+        "Starters During Cultural Event",
+        "Bonfire",
+        "Di Night",
+        "Fire Show"
+      ]
+    }
+  ],
+  "exclusions": [
+    "Any Airfare / Train Fare / Entrance fees / Monument Charges / Tips and porter charges",
+    "Expenses of personal nature such as drinks, telephone, Ayurveda massage and laundry bills etc.",
+    "Any boating charges (motorboat / pedal boat)",
+    "Any additional expenses incurred due to any flight delay or cancellation, weather conditions, political closures, technical faults etc.",
+    "Early Check-In / Late Check-out",
+    "Entry Tickets of Monuments",
+    "Anything not in inclusions is excluded"
+  ]
+}

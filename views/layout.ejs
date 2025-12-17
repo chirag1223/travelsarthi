@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <%- include('partials/head', {title: title || 'Travel Sarthi | AI-Powered Travel'}) %>
+</head>
+<body class="bg-background text-foreground antialiased relative">
+    <%- include('partials/header') %>
+    
+        <%- body %>
+    
+    <!-- <%- include('partials/chatbot') %> -->
+    <%- include('partials/modals') %>
+    <%- include('partials/footer') %>
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+    </script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

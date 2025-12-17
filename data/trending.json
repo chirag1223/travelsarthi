@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "title": "Rajasthan, India",
+        "description": "Royal Romance In The Land of Maharajas",
+        "image": "https://images.unsplash.com/photo-1599394022918-6c2776530abb?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 2,
+        "title": "Andaman Islands",
+        "description": "Island Dreams Begin Here",
+        "image": "https://images.unsplash.com/photo-1548013146-72479768bada?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 3,
+        "title": "Kerala",
+        "description": "Where Nature Smiles",
+        "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 4,
+        "title": "Jammu & Kashmir",
+        "description": "Snow Peaks, Silent Lakes, Endless Beauty",
+        "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 5,
+        "title": "Himachal Pradesh",
+        "description": "Chase The Chill, Feel The Thrill",
+        "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=800&auto=format&fit=crop"
+    },
+    {
+        "id": 6,
+        "title": "Pilgrimage Focused",
+        "description": "Find Peace, Find Purpose",
+        "image": "https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=800&auto=format&fit=crop"
+    }
+]        

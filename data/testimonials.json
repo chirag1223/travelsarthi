@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "name": "Srinivasa Reddy",
+        "location": "Traveled to Turkey",
+        "image": "/images/testimonials/1.png",
+        "rating": 5,
+        "comment": "Our family trip to Turkey was a truly wonderful and memorable experience. We spent seven nights exploring the beautiful cities of Istanbul, Cappadocia, and Antalya. The visit to the Blue Mosque and the Bosporus Cruise in Istanbul, the breathtaking waterfalls in Antalya, and the fascinating archaeological site of Pamukkale were all exciting highlights of our journey. The hot air balloon ride in Cappadocia was an especially thrilling and unforgettable experience for all of us. I am sincerely grateful to Travel Sarthi, Jaipur for organizing this well-planned tour. The entire trip was smooth and comfortable, with excellent facilities and a very competitive package.",
+        "date": "Septenber 2025"
+    },
+    {
+        "id": 2,
+        "name": "Gaurav Narnolia",
+        "location": "Traveled to Andaman and Nicobar Islands",
+        "image": "/images/testimonials/2.png",
+        "rating": 5,
+        "comment": "I recently traveled to the Andaman and Nicobar Islands for my honeymoon, and it was truly the best experience I have ever witnessed. Travel Saarthi made the entire journey seamless and memorable.<br><br>Right from the beginning, there were numerous facilities included in the package, such as on-time pick-ups, smooth check-ins, and neat and clean hotels. The airport pick-up and drop-off services were extremely punctual and hassle-free.<br><br>Both my partner and I thoroughly enjoyed every moment of the trip. A big thank you to Travel Saarthi for making our honeymoon so special and stress-free. Highly recommended!",
+        "date": "July 2025"
+    },
+    {
+        "id": 3,
+        "name": "Rajib Banerjee",
+        "location": "Traveled to Rajasthan",
+        "image": "/images/testimonials/3.png",
+        "rating": 5,
+        "comment": "An absolute gem of a trip. Every detail was taken care of, making for a truly relaxing experience. Excellent value for money. The amenities and service were top-tier for the price point.<br><br>I would highly recommend this to anyone looking for a seamless and enjoyable travel experience. 10/10.<br><br>Special thanks to Swati Jain for conducting this memorable trip 😃 and she is really very helpful.",
+        "date": "December 2025"
+    }
+]
