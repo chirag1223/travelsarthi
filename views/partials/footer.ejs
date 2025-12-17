@@ -1,55 +1,43 @@
-<footer class="bg-gradient-to-br from-sky-100 via-orange-50 to-amber-100 text-slate-900 pt-12 pb-6 border-t border-sky-200">
-    <div class="container mx-auto px-6">
-        <div class="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-5 gap-12 mb-10">
+<footer class="relative bg-white text-slate-900 pt-24 pb-6 overflow-hidden">
+    
+    <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] transform rotate-180">
+        <svg class="relative block w-[calc(100%+1.3px)] h-[60px]" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#f8fafc"></path>
+        </svg>
+    </div>
+
+    <div class="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-slate-50 to-transparent -z-10"></div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div class="flex flex-col items-center text-center">
             
-            <div class="col-span-1 lg:col-span-2">
-                <div class="mb-5">
-                    <img src="/images/Logo_side.svg" alt="Travel Sarthi" class="h-24 w-auto object-contain">
+            <img src="/images/Logo_side.svg" alt="Travel Sarthi" class="h-14 w-auto object-contain mb-4">
+            
+            <h3 class="text-xl font-black text-slate-900 tracking-tight mb-6">
+                Every Journey Needs a <span class="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-amber-500">Sarthi.</span>
+            </h3>
+
+            <div class="flex flex-wrap justify-center gap-x-8 gap-y-3 mb-8">
+                <a href="/" class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 hover:text-orange-500 transition-colors">Home</a>
+                <a href="/packages" class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 hover:text-orange-500 transition-colors">Packages</a>
+                <a href="/about" class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 hover:text-orange-500 transition-colors">Our Story</a>
+                <a href="/contact" class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 hover:text-orange-500 transition-colors">Contact</a>
+                <a href="/terms" class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 hover:text-orange-500 transition-colors">Terms</a>
+                <a href="/privacy" class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-500 hover:text-orange-500 transition-colors">Privacy</a>
+            </div>
+
+            <div class="flex gap-8 mb-10">
+                <a href="#" class="text-slate-400 hover:text-orange-500 transition-colors"><i data-lucide="instagram" class="h-5 w-5"></i></a>
+                <a href="#" class="text-slate-400 hover:text-slate-900 transition-colors"><i data-lucide="facebook" class="h-5 w-5"></i></a>
+                <a href="#" class="text-slate-400 hover:text-red-600 transition-colors"><i data-lucide="youtube" class="h-5 w-5"></i></a>
+            </div>
+
+            <div class="w-full pt-6 border-t border-slate-100 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-[9px] font-black uppercase tracking-widest text-slate-400">© 2025 Travel Sarthi Holidays</p>
+                <div class="flex items-center gap-2">
+                    <span class="w-8 h-px bg-slate-100"></span>
+                    <p class="text-[9px] font-black uppercase tracking-widest text-slate-400 italic">Guided by Heart</p>
                 </div>
-                
-                <h3 class="text-slate-900 font-extrabold text-2xl lg:text-3xl tracking-tight leading-tight text-balance mb-3">
-                    Every Great Journey Needs a  <b class="text-transparent bg-clip-text bg-gradient-to-r from-sky-600 to-orange-500">Sarthi</b>.
-                </h3>
-                <p class="text-slate-600 max-w-sm text-sm leading-relaxed font-medium">Focus on the <b>Moments</b>, we'll focus on the <b>Miles</b>.</p>
-                <p class="text-slate-600 max-w-sm text-sm leading-relaxed font-medium">
-                   We handle the <b>Plan</b>, you hold the <b>Memories</b>.                </p>
-                
-                <div class="flex gap-4 mt-6">
-                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-white/50 text-slate-500 hover:bg-white hover:text-sky-600 transition-all shadow-sm">
-                        <i data-lucide="instagram" class="h-5 w-5"></i>
-                    </a>
-                    <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-white/50 text-slate-500 hover:bg-white hover:text-blue-700 transition-all shadow-sm">
-                        <i data-lucide="facebook" class="h-5 w-5"></i>
-                    </a>
-                     <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-white/50 text-slate-500 hover:bg-white hover:text-sky-600 transition-all shadow-sm">
-                        <i data-lucide="youtube" class="h-5 w-5"></i>
-                    </a>
-                </div>
-            </div>
-
-            <div class="md:ml-auto">
-                <h4 class="font-bold text-slate-900 mb-6 text-xs uppercase tracking-widest">Company</h4>
-                <ul class="space-y-4 text-sm font-semibold">
-                    <li><a href="/home" class="text-slate-700 hover:text-sky-700 transition-colors">Home</a></li>
-                    <li><a href="/about" class="text-slate-700 hover:text-sky-700 transition-colors">Our Story</a></li>
-                    <li><a href="/contact" class="text-slate-700 hover:text-sky-700 transition-colors">Contact Us</a></li>
-                </ul>
-            </div>
-
-            <div class="md:ml-auto">
-                <h4 class="font-bold text-slate-900 mb-6 text-xs uppercase tracking-widest">Trust</h4>
-                <ul class="space-y-4 text-sm font-semibold">
-                    <li><a href="/terms_and_conditions" class="text-slate-700 hover:text-sky-700 transition-colors">Service Terms</a></li>
-                    <li><a href="/privacy_policy" class="text-slate-700 hover:text-sky-700 transition-colors">Privacy Policy</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="border-t border-slate-300/60 pt-6 flex flex-col md:flex-row justify-between items-center text-[11px] font-bold text-slate-400 uppercase tracking-[0.2em]">
-            <p>© 2025 Travel Sarthi Holidays Private Limited</p>
-            <div class="flex items-center gap-2">
-                <span class="w-2 h-[1px] bg-slate-300"></span>
-                <p>Guided by Heart</p>
             </div>
         </div>
     </div>

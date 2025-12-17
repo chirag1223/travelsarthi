@@ -1,41 +1,101 @@
-<div id="packages" class="page-transition">
-        <section class="relative min-h-[50vh] flex items-center justify-center pt-20">
-            <div class="absolute inset-0 z-0">
-                <img src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2000&auto=format&fit=crop"
-                    class="h-full w-full object-cover" alt="Traveler Adventure">
-                <div class="hero-overlay absolute inset-0"></div>
+<div id="packages" class="page-transition bg-white">
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            
+            <div class="flex flex-col lg:flex-row gap-8">
+                
+                <aside class="lg:w-56 flex-shrink-0">
+                    <div class="sticky top-24">
+                        <p class="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-4 px-2">Filter By</p>
+                        <div class="flex flex-col gap-1">
+                            <button onclick="switchTab('all')" id="tab-all"
+                                class="tab-btn w-full text-left px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all bg-orange-500 text-white">
+                                All
+                            </button>
+
+                            <% Object.keys(packages).forEach((category) => { %>
+                                <button onclick="switchTab('<%= category %>')" id="tab-<%= category %>"
+                                    class="tab-btn w-full text-left px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all text-slate-600 hover:bg-slate-50">
+                                    <%= category %>
+                                </button>
+                            <% }); %>
+                        </div>
+                    </div>
+                </aside>
+
+                <div id="package-container" class="flex-grow grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-20">
+    <% Object.keys(packages).forEach((category) => { %>
+        <% packages[category].forEach(item => { %>
+            
+            <div class="package-card group relative rounded-[1.5rem] overflow-hidden aspect-[16/11] cursor-pointer shadow-lg transition-all duration-500 hover:-translate-y-2 border border-slate-100" 
+                 data-category="<%= category %>">
+                
+                <img src="<%= item.image %>" 
+                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+                     alt="<%= item.title %>">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-90"></div>
+
+                <div class="absolute top-3 left-3 right-3 flex justify-between items-start">
+                    <div class="bg-white/20 backdrop-blur-md px-2 py-0.5 rounded border border-white/10 flex items-center gap-1">
+                        <i data-lucide="star" class="h-2.5 w-2.5 text-orange-400 fill-orange-400"></i>
+                        <span class="text-[9px] font-black text-white"><%= item.rating %></span>
+                    </div>
+                    <div class="bg-orange-500 px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest text-white">
+                        <%= item.duration %>
+                    </div>
+                </div>
+
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                    <p class="text-[8px] font-bold text-sky-400 uppercase tracking-widest mb-1">
+                        <%= item.locations.split('•')[0] %>
+                    </p>
+                    
+                    <h3 class="text-sm font-black leading-tight mb-2 line-clamp-1 group-hover:text-orange-400 transition-colors">
+                        <%= item.title %>
+                    </h3>
+
+                    <div class="flex items-center justify-between border-t border-white/10 pt-2">
+                        <div class="flex items-baseline gap-1.5">
+                            <p class="text-sm font-black text-white">₹<%= item.price %></p>
+                            <p class="text-slate-400 text-[8px] font-bold line-through">₹<%= item.oldPrice %></p>
+                        </div>
+                        <span class="text-[8px] font-black text-green-400 bg-green-400/10 px-1.5 py-0.5 rounded border border-green-400/20">
+                            SAVE ₹<%= item.save %>
+                        </span>
+                    </div>
+                </div>
             </div>
-            <div class="container relative z-10 mx-auto px-4 text-center text-white">
-                <h1 class="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Travel Packages</h1>
-                <p class="text-lg md:text-xl text-gray-100 max-w-2xl mx-auto drop-shadow-md">All-inclusive tours and
-                    curated experiences</p>
+
+        <% }); %>
+    <% }); %>
+</div>
+
             </div>
-        </section>
+        </div>
+    </section>
+</div>
 
-        <section class="py-12 bg-slate-50">
+<script>
+    function switchTab(category) {
+        const cards = document.querySelectorAll('.package-card');
+        const buttons = document.querySelectorAll('.tab-btn');
 
+        buttons.forEach(btn => {
+            btn.classList.remove('bg-orange-500', 'text-white');
+            btn.classList.add('text-slate-600', 'hover:bg-slate-50');
+        });
+        
+        const activeBtn = document.getElementById('tab-' + category);
+        activeBtn.classList.add('bg-orange-500', 'text-white');
+        activeBtn.classList.remove('text-slate-600', 'hover:bg-slate-50');
 
-
-            <section class="container mx-auto px-4 py-12">
-                <div class="text-center mb-8">
-                    <h2 class="text-3xl font-bold text-slate-800 mb-2">Your Impulse. Our Itinerary.</h2>
-                    <p class="text-slate-500">We go the extra mile to make your journey special and seamless.</p>
-                </div>
-
-                <div class="flex flex-wrap justify-center gap-2 mb-10">
-                    <button onclick="switchTab('adventure')" id="tab-adventure"
-                        class="tab-btn px-6 py-2 rounded-full text-sm font-medium transition-colors bg-[#ff5722] text-white shadow-md">Adventure</button>
-                    <button onclick="switchTab('honeymoon')" id="tab-honeymoon"
-                        class="tab-btn px-6 py-2 rounded-full text-sm font-medium transition-colors bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">Honeymoon</button>
-                    <button onclick="switchTab('spiritual')" id="tab-spiritual"
-                        class="tab-btn px-6 py-2 rounded-full text-sm font-medium transition-colors bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">Spirituals</button>
-                    <button onclick="switchTab('leisure')" id="tab-leisure"
-                        class="tab-btn px-6 py-2 rounded-full text-sm font-medium transition-colors bg-white text-slate-600 hover:bg-slate-100 border border-slate-200">Leisure</button>
-                </div>
-
-                <div id="card-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                </div>
-
-            </section>
-        </section>
-    </div>
+        cards.forEach(card => {
+            if (category === 'all' || card.getAttribute('data-category') === category) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+</script>

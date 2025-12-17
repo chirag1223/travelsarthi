@@ -2,7 +2,7 @@
     "adventure": [
         {
             "title": "Chardham Yatra By Helicopter | Fly To Four Dhams",
-            "image": "https://images.unsplash.com/photo-1598544606622-42173f4e1957?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/1.avif",
             "duration": "5N/6D",
             "rating": "4.8",
             "locations": "1D Dehradun • 1D Yamunotri • 1D Gangotri • +3",
@@ -12,7 +12,7 @@
         },
         {
             "title": "Desert Dreams Of Dubai | The Ultimate 5 Day Journey",
-            "image": "https://images.unsplash.com/photo-1518684079-3c830dcef6c3?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/2.avif",
             "duration": "4N/5D",
             "rating": "4.7",
             "locations": "5D Dubai",
@@ -22,7 +22,7 @@
         },
         {
             "title": "Sunny Mauritius Getaway | Grand Bassin & Nature Trails",
-            "image": "https://images.unsplash.com/photo-1505881402582-c5bc11054f91?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/3.avif",
             "duration": "5N/6D",
             "rating": "4.9",
             "locations": "6D Mauritius",
@@ -34,7 +34,7 @@
     "honeymoon": [
         {
             "title": "Romantic Bali Escape | Private Pool Villa Special",
-            "image": "https://images.unsplash.com/photo-1537996194471-e657df975ab4?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/4.avif",
             "duration": "6N/7D",
             "rating": "5.0",
             "locations": "3N Ubud • 3N Seminyak",
@@ -44,7 +44,7 @@
         },
         {
             "title": "Maldives Water Villa | All Inclusive Luxury",
-            "image": "https://images.unsplash.com/photo-1514282401047-d79a71a590e8?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/5.avif",
             "duration": "4N/5D",
             "rating": "4.9",
             "locations": "4N Male Atoll",
@@ -54,7 +54,7 @@
         },
         {
             "title": "Swiss Paris Delight | The City of Love",
-            "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/6.avif",
             "duration": "7N/8D",
             "rating": "4.8",
             "locations": "3N Paris • 4N Zurich",
@@ -66,7 +66,7 @@
     "spiritual": [
         {
             "title": "Varanasi & Ayodhya | A Spiritual Awakening",
-            "image": "https://images.unsplash.com/photo-1561361513-2d000a50f0dc?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/7.avif",
             "duration": "3N/4D",
             "rating": "4.6",
             "locations": "2N Varanasi • 1N Ayodhya",
@@ -76,7 +76,7 @@
         },
         {
             "title": "Tirupati Balaji Darshan",
-            "image": "https://images.unsplash.com/photo-1623932883301-49033282b046?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/8.avif",
             "duration": "2N/3D",
             "rating": "4.7",
             "locations": "2N Tirupati",
@@ -86,7 +86,7 @@
         },
         {
             "title": "Amarnath Yatra By Helicopter",
-            "image": "https://images.unsplash.com/photo-1626245353169-269c84917537?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/9.avif",
             "duration": "3N/4D",
             "rating": "4.8",
             "locations": "1N Srinagar • 1N Sonmarg",
@@ -98,7 +98,7 @@
     "leisure": [
         {
             "title": "Goa Beach Party & Relax | North & South Tour",
-            "image": "https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/10.avif",
             "duration": "4N/5D",
             "rating": "4.5",
             "locations": "2N North Goa • 2N South Goa",
@@ -108,7 +108,7 @@
         },
         {
             "title": "Kerala Backwaters & Houseboat",
-            "image": "https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/11.avif",
             "duration": "5N/6D",
             "rating": "4.8",
             "locations": "2N Munnar • 1N Alleppey",
@@ -118,7 +118,7 @@
         },
         {
             "title": "Vietnam Essentials",
-            "image": "https://images.unsplash.com/photo-1504214208698-ea1916a2195a?q=80&w=600&auto=format&fit=crop",
+            "image": "/images/packages/12.avif",
             "duration": "5N/6D",
             "rating": "4.7",
             "locations": "2N Hanoi • 1N Halong Bay",

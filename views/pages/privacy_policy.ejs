@@ -1,233 +1,121 @@
-<div id="payment-policy" class="page-transition" >
-    <section class="relative min-h-[50vh] flex items-center justify-center pt-20">
-        <div class="absolute inset-0  from-blue-50"></div>
-        <div class="relative container mx-auto px-4 py-12">
-            <div class="max-w-6xl mx-auto">
-                <!-- Header -->
-                <div class="text-center mb-16">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Payment & Cancellation Policy</h1>
-                    <div class="h-1 w-32 bg-blue-600 mx-auto"></div>
-                    <p class="mt-8 text-gray-600 text-lg max-w-3xl mx-auto">
-                        Please review our payment and cancellation policies carefully before confirming your booking.
-                    </p>
-                </div>
+<div id="payment-policy" class="page-transition">
+    <section class="relative min-h-screen pt-32 pb-20 bg-white overflow-hidden">
+        <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-sky-50 rounded-full blur-[120px] opacity-60 -mr-40 -mt-40"></div>
+        <div class="absolute bottom-0 left-0 w-[500px] h-[500px] bg-orange-50 rounded-full blur-[120px] opacity-60 -ml-40 -mb-40"></div>
 
-                <!-- Two Column Content -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                    <!-- Left Column - Payment Policy -->
-                    <div class="space-y-10">
-                        <!-- Payment Policy Header -->
-                        <div class="text-center">
-                            <div class="inline-flex items-center justify-center w-16 h-16 bg-blue-100 rounded-full mb-4">
-                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Payment Policy</h2>
-                            <p class="text-gray-600">Payment schedule for confirmed bookings</p>
+        <div class="relative container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center mb-24">
+                <span class="text-sky-600 font-bold tracking-[0.3em] uppercase text-xs">Booking Terms</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 mt-4 mb-6 tracking-tight">
+                    Payment & <span class="text-orange-500">Cancellation</span>
+                </h1>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto font-medium">
+                    Clear terms for your peace of mind. Every great journey starts with a transparent plan.
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-24">
+                
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+                        <i data-lucide="wallet" class="h-6 w-6 text-sky-500"></i>
+                        Payment Schedule
+                    </h2>
+
+                    <div class="relative border-l-2 border-slate-100 ml-3 pl-10 space-y-16">
+                        <div class="relative">
+                            <div class="absolute -left-[51px] top-0 w-10 h-10 rounded-full bg-white border-4 border-sky-500 shadow-sm flex items-center justify-center font-bold text-sky-600">1</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Confirmation Deposit</h3>
+                            <p class="text-4xl font-black text-sky-600 my-3">50%</p>
+                            <p class="text-slate-600">Payable immediately upon booking confirmation to secure all land arrangements.</p>
                         </div>
 
-                        <!-- Payment Terms -->
-                        <div class="space-y-6">
-                            <!-- Initial Payment -->
-                            <div class="bg-white p-6 rounded-xl border border-gray-200">
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0">
-                                        <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center">
-                                            <span class="text-blue-600 font-bold">1</span>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h3 class="text-xl font-semibold text-gray-900 mb-2">At Confirmation</h3>
-                                        <p class="text-gray-700">
-                                            <span class="text-blue-600 font-bold">50%</span> of the total package cost
-                                        </p>
-                                        <p class="text-sm text-gray-500 mt-2">Payable immediately upon booking confirmation</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Final Payment -->
-                            <div class="bg-white p-6 rounded-xl border border-gray-200">
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0">
-                                        <div class="w-10 h-10 bg-blue-50 rounded-full flex items-center justify-center">
-                                            <span class="text-blue-600 font-bold">2</span>
-                                        </div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <h3 class="text-xl font-semibold text-gray-900 mb-2">Before Travel</h3>
-                                        <p class="text-gray-700">
-                                            Remaining <span class="text-blue-600 font-bold">50%</span> before 7 days of travel date
-                                        </p>
-                                        <p class="text-sm text-gray-500 mt-2">Must be cleared 7 days prior to departure</p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Payment Methods -->
-                            <div class="mt-8">
-                                <h4 class="text-lg font-semibold text-gray-900 mb-4">Accepted Payment Methods</h4>
-                                <div class="grid grid-cols-2 gap-4">
-                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                                        <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center mr-3">
-                                            <span class="text-green-600 font-bold">₹</span>
-                                        </div>
-                                        <span class="text-gray-700">Bank Transfer</span>
-                                    </div>
-                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                                        <div class="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3">
-                                            <span class="text-purple-600 font-bold">UPI</span>
-                                        </div>
-                                        <span class="text-gray-700">UPI Payment</span>
-                                    </div>
-                                    <div class="flex items-center p-3 bg-gray-50 rounded-lg">
-                                        <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
-                                                <path d="M12 2C8.579 2 5 2 5 6s3.579 10 7 10 7-4 7-8-3.579-6-7-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm6.39 4.56C16.71 15.7 14.53 15 12 15s-4.71.7-6.39 1.56A2.97 2.97 0 0 0 4 19c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2 0-1.07-.7-1.98-1.61-2.44z"></path>
-                                            </svg>
-                                        </div>
-                                        <span class="text-gray-700">Credit/Debit Card</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-8 p-6 bg-amber-50 border border-amber-200 rounded-xl">
-                                <h4 class="text-lg font-semibold text-amber-800 mb-3">Important Notes</h4>
-                                <ul class="text-gray-700 space-y-2">
-                                    <li class="flex items-start">
-                                        <span class="text-amber-600 mr-3">•</span>
-                                        <span>Hotels / Transport / Cruise / Ferry cancellations/retentions would be additional to Company's Cancellation charges.</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-amber-600 mr-3">•</span>
-                                        <span>All refunds are processed within 10-15 working days after cancellation.</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-amber-600 mr-3">•</span>
-                                        <span>Cancellation must be requested in writing via email or official communication.</span>
-                                    </li>
-                                    <li class="flex items-start">
-                                        <span class="text-amber-600 mr-3">•</span>
-                                        <span>Refund amount will be calculated on the total package cost.</span>
-                                    </li>
-                                </ul>
-                            </div>
-                    </div>
-
-                    <!-- Right Column - Cancellation Policy -->
-                    <div class="space-y-10">
-                        <!-- Cancellation Policy Header -->
-                        <div class="text-center">
-                            <div class="inline-flex items-center justify-center w-16 h-16 bg-red-100 rounded-full mb-4">
-                                <svg class="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                                </svg>
-                            </div>
-                            <h2 class="text-3xl font-bold text-gray-900 mb-2">Cancellation Policy</h2>
-                            <p class="text-gray-600">Land package cancellation charges</p>
-                        </div>
-
-                        <!-- Cancellation Terms -->
-                        <div class="space-y-6">
-                            <!-- More than 30 Days -->
-                            <div class="bg-white p-6 rounded-xl border border-red-100">
-                                <div class="flex justify-between items-start mb-2">
-                                    <h3 class="text-xl font-semibold text-gray-900">More than 30 Days before Travel</h3>
-                                    <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full text-sm font-semibold">20%</span>
-                                </div>
-                                <p class="text-gray-700">20% of the Package cost</p>
-                                <div class="mt-3 pt-3 border-t border-gray-100">
-                                    <p class="text-sm text-gray-500">Cancellation must be made at least 30 days prior to travel date</p>
-                                </div>
-                            </div>
-
-                            <!-- 15-30 Days -->
-                            <div class="bg-white p-6 rounded-xl border border-orange-100">
-                                <div class="flex justify-between items-start mb-2">
-                                    <h3 class="text-xl font-semibold text-gray-900">15-30 Days before Travel</h3>
-                                    <span class="px-3 py-1 bg-orange-50 text-orange-700 rounded-full text-sm font-semibold">50%</span>
-                                </div>
-                                <p class="text-gray-700">50% of the Package cost</p>
-                                <div class="mt-3 pt-3 border-t border-gray-100">
-                                    <p class="text-sm text-gray-500">Between 15 and 30 days prior to travel date</p>
-                                </div>
-                            </div>
-
-                            <!-- Less than 15 Days / No Show -->
-                            <div class="bg-white p-6 rounded-xl border border-red-200">
-                                <div class="flex justify-between items-start mb-2">
-                                    <h3 class="text-xl font-semibold text-gray-900">Less than 15 Days / No Show</h3>
-                                    <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full text-sm font-semibold">100%</span>
-                                </div>
-                                <p class="text-gray-700">100% of the Package cost</p>
-                                <div class="mt-3 pt-3 border-t border-gray-100">
-                                    <p class="text-sm text-gray-500">Within 15 days of travel or in case of no show</p>
-                                </div>
-                            </div>
-
-                            <!-- Peak Season -->
-                            <div class="bg-white p-6 rounded-xl border border-red-200 bg-red-50">
-                                <div class="flex justify-between items-start mb-2">
-                                    <h3 class="text-xl font-semibold text-red-800">Peak Season (Dec 10 - Jan 20)</h3>
-                                    <span class="px-3 py-1 bg-red-200 text-red-800 rounded-full text-sm font-semibold">100%</span>
-                                </div>
-                                <p class="text-red-700">100% of the Package cost</p>
-                                <div class="mt-3 pt-3 border-t border-red-100">
-                                    <p class="text-sm text-red-600">No cancellation entertained during peak season</p>
-                                    <p class="text-sm text-red-500 mt-1">Travel dates between December 10 and January 20</p>
-                                </div>
-                            </div>
-
+                        <div class="relative">
+                            <div class="absolute -left-[51px] top-0 w-10 h-10 rounded-full bg-white border-4 border-slate-200 shadow-sm flex items-center justify-center font-bold text-slate-400">2</div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-1">Final Payment</h3>
+                            <p class="text-4xl font-black text-slate-900 my-3">50%</p>
+                            <p class="text-slate-600">Remaining balance must be cleared <span class="font-bold text-slate-900 underline decoration-sky-500">Before 7 Days</span> of your Travel Date.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Summary Box -->
-                <div class="mt-16 bg-gray-50 border border-gray-200 rounded-xl p-8">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Policy Summary</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-4">Payment Schedule</h4>
-                            <div class="space-y-3">
-                                <div class="flex justify-between py-2 border-b border-gray-200">
-                                    <span class="text-gray-700">At Confirmation</span>
-                                    <span class="font-semibold text-blue-600">50%</span>
-                                </div>
-                                <div class="flex justify-between py-2 border-b border-gray-200">
-                                    <span class="text-gray-700">Before 7 Days of Travel</span>
-                                    <span class="font-semibold text-blue-600">50%</span>
-                                </div>
+                <div>
+                    <h2 class="text-2xl font-bold text-slate-900 mb-12 flex items-center gap-3">
+                        <i data-lucide="shield-x" class="h-6 w-6 text-orange-500"></i>
+                        Cancellation Retention
+                    </h2>
+
+                    <div class="space-y-12">
+                        <div class="flex items-start gap-6 group">
+                            <div class="pt-1">
+                                <div class="w-2 h-2 rounded-full bg-slate-300 group-hover:bg-orange-500 transition-colors"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900">More than 30 Days</h3>
+                                <p class="text-2xl font-black text-slate-400 group-hover:text-orange-500 transition-colors">20% Deduction</p>
+                                <p class="text-slate-500 text-sm mt-1">Of the total package cost.</p>
                             </div>
                         </div>
-                        <div>
-                            <h4 class="text-lg font-semibold text-gray-900 mb-4">Cancellation Charges</h4>
-                            <div class="space-y-3">
-                                <div class="flex justify-between py-2 border-b border-gray-200">
-                                    <span class="text-gray-700">30+ Days Before</span>
-                                    <span class="font-semibold text-gray-700">20%</span>
-                                </div>
-                                <div class="flex justify-between py-2 border-b border-gray-200">
-                                    <span class="text-gray-700">15-30 Days Before</span>
-                                    <span class="font-semibold text-gray-700">50%</span>
-                                </div>
-                                <div class="flex justify-between py-2 border-b border-gray-200">
-                                    <span class="text-gray-700">Less than 15 Days</span>
-                                    <span class="font-semibold text-red-600">100%</span>
-                                </div>
-                                <div class="flex justify-between py-2">
-                                    <span class="text-gray-700">Peak Season</span>
-                                    <span class="font-semibold text-red-600">100%</span>
-                                </div>
+
+                        <div class="flex items-start gap-6 group">
+                            <div class="pt-1">
+                                <div class="w-2 h-2 rounded-full bg-slate-300 group-hover:bg-orange-500 transition-colors"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-slate-900">15 to 30 Days</h3>
+                                <p class="text-2xl font-black text-slate-400 group-hover:text-orange-500 transition-colors">50% Deduction</p>
+                                <p class="text-slate-500 text-sm mt-1">Of the total package cost.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-6 group">
+                            <div class="pt-1">
+                                <div class="w-2 h-2 rounded-full bg-red-500"></div>
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-red-600">Less than 15 Days / No Show</h3>
+                                <p class="text-2xl font-black text-red-600">100% Deduction</p>
+                                <p class="text-slate-500 text-sm mt-1">Full package cost is retained as cancellation charges.</p>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Footer Note -->
-                <div class="mt-12 text-center text-gray-500">
-                    <p>Last updated: December 2025 | For any queries regarding payments or cancellations, please contact our support team.</p>
+            <div class="mt-24 max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-slate-900 to-slate-800 rounded-[2rem] p-8 text-white relative overflow-hidden shadow-xl">
+                        <div class="absolute top-0 right-0 p-4 opacity-10">
+                            <i data-lucide="snowflake" class="h-24 w-24 text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 flex items-center gap-2">
+                            <i data-lucide="calendar-alert" class="h-5 w-5 text-orange-400"></i>
+                            Peak Season Policy
+                        </h3>
+                        <p class="text-slate-300 leading-relaxed mb-4">
+                            For Travel Dates between <span class="text-white font-bold">Dec 10 - Jan 20</span>:
+                        </p>
+                        <p class="text-2xl font-black text-orange-400 tracking-tight">100% Non-Refundable</p>
+                        <p class="text-xs text-slate-400 mt-4 uppercase tracking-widest font-bold">No cancellations entertained for this period.</p>
+                    </div>
+
+                    <div class="p-8 rounded-[2rem] border border-slate-100 bg-slate-50/50">
+                        <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                            <i data-lucide="info" class="h-5 w-5 text-sky-500"></i>
+                            Additional Retentions
+                        </h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">
+                            Please note that <span class="text-slate-900 font-bold">Hotels, Transport, Cruise, and Ferry</span> cancellations or retentions are governed by their respective providers.
+                        </p>
+                        <div class="p-3 bg-white rounded-xl text-xs font-bold text-sky-600 border border-sky-100 uppercase tracking-wide">
+                            These charges are additional to Company's Cancellation charges.
+                        </div>
+                    </div>
                 </div>
+            </div>
+
+            <div class="mt-20 text-center text-slate-400 text-xs font-bold uppercase tracking-[0.2em]">
+                Travel Sarthi Holidays Pvt. Ltd. • Last Updated Dec 2025
             </div>
         </div>
     </section>

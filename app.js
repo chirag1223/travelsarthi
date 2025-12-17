@@ -29,9 +29,7 @@ app.get('/', (req, res) => {
         title: 'Travel Sarthi',
         page: 'home',
         destinations: destinationsData,
-        hotels: hotelsData,
         trending: trendingData,
-        packages: packagesData,
         testimonials: testimonialsData
     });
 });
@@ -61,7 +59,8 @@ app.get('/visa', (req, res) => {
 app.get('/packages', (req, res) => {
     res.render('pages/packages', {
         title: 'Travel Packages | Travel Sarthi',
-        page: 'packages'
+        page: 'packages',
+        packages: packagesData,
     });
 });
 
