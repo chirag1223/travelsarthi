@@ -33,28 +33,6 @@ app.get('/', (req, res) => {
         testimonials: testimonialsData
     });
 });
-// Routes - No need to specify layout in each route
-
-app.get('/destinations', (req, res) => {
-    res.render('pages/destinations', {
-        title: 'Explore Destinations | Travel Sarthi',
-        page: 'destinations'
-    });
-});
-
-app.get('/hotels', (req, res) => {
-    res.render('pages/hotels', {
-        title: 'Find Hotels | Travel Sarthi',
-        page: 'hotels'
-    });
-});
-
-app.get('/visa', (req, res) => {
-    res.render('pages/visa', {
-        title: 'Visa Services | Travel Sarthi',
-        page: 'visa'
-    });
-});
 
 app.get('/packages', (req, res) => {
     res.render('pages/packages', {
@@ -64,12 +42,6 @@ app.get('/packages', (req, res) => {
     });
 });
 
-app.get('/blog', (req, res) => {
-    res.render('pages/blog', {
-        title: 'Travel Blog | Travel Sarthi',
-        page: 'blog'
-    });
-});
 
 app.get('/about', (req, res) => {
     res.render('pages/about', {
