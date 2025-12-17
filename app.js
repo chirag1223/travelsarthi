@@ -57,14 +57,14 @@ app.get('/contact', (req, res) => {
     });
 });
 
-app.get('/terms_and_conditions', (req, res) => {
+app.get('/terms', (req, res) => {
     res.render('pages/terms_and_conditions', {
         title: 'T&C | Travel Sarthi',
         page: 'contact'
     });
 });
 
-app.get('/privacy_policy', (req, res) => {
+app.get('/privacy', (req, res) => {
     res.render('pages/privacy_policy', {
         title: 'Privacy Policy | Travel Sarthi',
         page: 'contact'
