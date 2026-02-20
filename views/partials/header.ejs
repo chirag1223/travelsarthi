@@ -26,9 +26,9 @@
 
         <div class="flex items-center gap-4">
             <a href="/contact" 
-   class="inline-flex items-center justify-center h-9 px-6 bg-orange-500 text-white rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-slate-900 transition-colors">
-    Get a Quote
-</a>
+               class="inline-flex items-center justify-center h-9 px-6 bg-orange-500 text-white rounded-full text-[10px] font-black uppercase tracking-widest hover:bg-slate-900 transition-colors">
+                Get a Quote
+            </a>
 
             <button id="mobile-menu-btn" onclick="toggleMobileMenu()"
                 class="md:hidden p-1.5 text-slate-900 hover:text-orange-500 transition-colors">
@@ -36,10 +36,28 @@
             </button>
         </div>
     </div>
+
+    <!-- Mobile menu panel - THIS WAS MISSING -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-4 px-6 flex-col gap-4">
+        <a href="/" class="text-[11px] font-black uppercase tracking-[0.2em] text-slate-900 hover:text-orange-500 transition-colors py-2">
+            Home
+        </a>
+        <a href="/packages" class="text-[11px] font-black uppercase tracking-[0.2em] text-slate-900 hover:text-orange-500 transition-colors py-2">
+            Packages
+        </a>
+        <a href="/about" class="text-[11px] font-black uppercase tracking-[0.2em] text-slate-900 hover:text-orange-500 transition-colors py-2">
+            Our Story
+        </a>
+        <a href="/contact" class="text-[11px] font-black uppercase tracking-[0.2em] text-slate-900 hover:text-orange-500 transition-colors py-2">
+            Contact
+        </a>
+        <a href="/contact" class="text-[11px] font-black uppercase tracking-[0.2em] text-orange-500 hover:text-slate-900 transition-colors py-2">
+            Get a Quote
+        </a>
+    </div>
 </nav>
 
 <script>
-    // No scroll logic here - it stays opaque/semi-transparent all the time
     function toggleMobileMenu() {
         const menu = document.getElementById('mobile-menu');
         if (menu) {
