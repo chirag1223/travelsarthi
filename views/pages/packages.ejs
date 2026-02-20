@@ -1,10 +1,11 @@
 <div id="packages" class="page-transition bg-white">
-    <section class="py-16">
-        <div class="container mx-auto px-6">
+    <section class="py-8 md:py-16">
+        <div class="container mx-auto px-4 md:px-6">
             
-            <div class="flex flex-col lg:flex-row gap-8">
+            <div class="flex flex-col lg:flex-row gap-6 md:gap-8">
                 
-                <aside class="lg:w-56 flex-shrink-0">
+                <!-- Desktop Sidebar (hidden on mobile) -->
+                <aside class="hidden lg:block lg:w-56 flex-shrink-0">
                     <div class="sticky top-24">
                         <p class="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-4 px-2">Filter By</p>
                         <div class="flex flex-col gap-1">
@@ -23,54 +24,71 @@
                     </div>
                 </aside>
 
-                <div id="package-container" class="flex-grow grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 pt-20">
-    <% Object.keys(packages).forEach((category) => { %>
-        <% packages[category].forEach(item => { %>
-            
-            <div class="package-card group relative rounded-[1.5rem] overflow-hidden aspect-[16/11] cursor-pointer shadow-lg transition-all duration-500 hover:-translate-y-2 border border-slate-100" 
-                 data-category="<%= category %>">
-                
-                <img src="<%= item.image %>" 
-                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
-                     alt="<%= item.title %>">
-                
-                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-90"></div>
+                <!-- Mobile Category Pills (visible only on mobile) -->
+                <div class="lg:hidden -mt-2 mb-2">
+                    <p class="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-3 px-1">Filter By</p>
+                    <div class="flex flex-wrap gap-2">
+                        <button onclick="switchTab('all')" id="mobile-tab-all"
+                            class="tab-btn-mobile px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-all bg-orange-500 text-white">
+                            All
+                        </button>
 
-                <div class="absolute top-3 left-3 right-3 flex justify-between items-start">
-                    <div class="bg-white/20 backdrop-blur-md px-2 py-0.5 rounded border border-white/10 flex items-center gap-1">
-                        <i data-lucide="star" class="h-2.5 w-2.5 text-orange-400 fill-orange-400"></i>
-                        <span class="text-[9px] font-black text-white"><%= item.rating %></span>
-                    </div>
-                    <div class="bg-orange-500 px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest text-white">
-                        <%= item.duration %>
+                        <% Object.keys(packages).forEach((category) => { %>
+                            <button onclick="switchTab('<%= category %>')" id="mobile-tab-<%= category %>"
+                                class="tab-btn-mobile px-5 py-2.5 rounded-full text-[10px] font-black uppercase tracking-widest transition-all bg-slate-100 text-slate-600">
+                                <%= category %>
+                            </button>
+                        <% }); %>
                     </div>
                 </div>
 
-                <div class="absolute bottom-4 left-4 right-4 text-white">
-                    <p class="text-[8px] font-bold text-sky-400 uppercase tracking-widest mb-1">
-                        <%= item.locations.split('•')[0] %>
-                    </p>
-                    
-                    <h3 class="text-sm font-black leading-tight mb-2 line-clamp-1 group-hover:text-orange-400 transition-colors">
-                        <%= item.title %>
-                    </h3>
+                <div id="package-container" class="flex-grow grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:gap-6 lg:pt-20">
+                    <% Object.keys(packages).forEach((category) => { %>
+                        <% packages[category].forEach(item => { %>
+                            
+                            <div class="package-card group relative rounded-[1.5rem] overflow-hidden aspect-[16/11] cursor-pointer shadow-lg transition-all duration-500 hover:-translate-y-2 border border-slate-100" 
+                                 data-category="<%= category %>">
+                                
+                                <img src="<%= item.image %>" 
+                                     class="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110" 
+                                     alt="<%= item.title %>">
+                                
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent opacity-90"></div>
 
-                    <div class="flex items-center justify-between border-t border-white/10 pt-2">
-                        <div class="flex items-baseline gap-1.5">
-                            <p class="text-sm font-black text-white">₹<%= item.price %></p>
-                            <p class="text-slate-400 text-[8px] font-bold line-through">₹<%= item.oldPrice %></p>
-                        </div>
-                        <span class="text-[8px] font-black text-green-400 bg-green-400/10 px-1.5 py-0.5 rounded border border-green-400/20">
-                            SAVE ₹<%= item.save %>
-                        </span>
-                    </div>
+                                <div class="absolute top-3 left-3 right-3 flex justify-between items-start">
+                                    <div class="bg-white/20 backdrop-blur-md px-2 py-0.5 rounded border border-white/10 flex items-center gap-1">
+                                        <i data-lucide="star" class="h-2.5 w-2.5 text-orange-400 fill-orange-400"></i>
+                                        <span class="text-[9px] font-black text-white"><%= item.rating %></span>
+                                    </div>
+                                    <div class="bg-orange-500 px-2 py-0.5 rounded text-[8px] font-black uppercase tracking-widest text-white">
+                                        <%= item.duration %>
+                                    </div>
+                                </div>
+
+                                <div class="absolute bottom-3 left-3 right-3 text-white">
+                                    <p class="text-[8px] font-bold text-sky-400 uppercase tracking-widest mb-1">
+                                        <%= item.locations.split('•')[0] %>
+                                    </p>
+                                    
+                                    <h3 class="text-sm font-black leading-tight mb-1.5 line-clamp-1 group-hover:text-orange-400 transition-colors">
+                                        <%= item.title %>
+                                    </h3>
+
+                                    <div class="flex items-center justify-between border-t border-white/10 pt-1.5">
+                                        <div class="flex items-baseline gap-1.5">
+                                            <p class="text-sm font-black text-white">₹<%= item.price %></p>
+                                            <p class="text-slate-400 text-[8px] font-bold line-through">₹<%= item.oldPrice %></p>
+                                        </div>
+                                        <span class="text-[8px] font-black text-green-400 bg-green-400/10 px-1.5 py-0.5 rounded border border-green-400/20">
+                                            SAVE ₹<%= item.save %>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        <% }); %>
+                    <% }); %>
                 </div>
-            </div>
-
-        <% }); %>
-    <% }); %>
-</div>
-
             </div>
         </div>
     </section>
@@ -79,17 +97,34 @@
 <script>
     function switchTab(category) {
         const cards = document.querySelectorAll('.package-card');
-        const buttons = document.querySelectorAll('.tab-btn');
-
-        buttons.forEach(btn => {
+        
+        // Handle desktop buttons
+        const desktopButtons = document.querySelectorAll('.tab-btn');
+        desktopButtons.forEach(btn => {
             btn.classList.remove('bg-orange-500', 'text-white');
             btn.classList.add('text-slate-600', 'hover:bg-slate-50');
         });
         
-        const activeBtn = document.getElementById('tab-' + category);
-        activeBtn.classList.add('bg-orange-500', 'text-white');
-        activeBtn.classList.remove('text-slate-600', 'hover:bg-slate-50');
+        const desktopActiveBtn = document.getElementById('tab-' + category);
+        if (desktopActiveBtn) {
+            desktopActiveBtn.classList.add('bg-orange-500', 'text-white');
+            desktopActiveBtn.classList.remove('text-slate-600', 'hover:bg-slate-50');
+        }
 
+        // Handle mobile buttons
+        const mobileButtons = document.querySelectorAll('.tab-btn-mobile');
+        mobileButtons.forEach(btn => {
+            btn.classList.remove('bg-orange-500', 'text-white');
+            btn.classList.add('bg-slate-100', 'text-slate-600');
+        });
+        
+        const mobileActiveBtn = document.getElementById('mobile-tab-' + category);
+        if (mobileActiveBtn) {
+            mobileActiveBtn.classList.add('bg-orange-500', 'text-white');
+            mobileActiveBtn.classList.remove('bg-slate-100', 'text-slate-600');
+        }
+
+        // Filter cards
         cards.forEach(card => {
             if (category === 'all' || card.getAttribute('data-category') === category) {
                 card.style.display = 'block';
