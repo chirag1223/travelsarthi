@@ -189,38 +189,46 @@
 </div>
 
 <script>
-    // Handle form submission
+    // Simple version that works even with CORS
     document.getElementById('contactForm').addEventListener('submit', function(e) {
         e.preventDefault();
         
         // Get form data
         const formData = new FormData(this);
         
-        // Send form data using fetch
-        fetch(this.action, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => {
-            if (response.ok) {
-                // Show success modal
-                document.getElementById('successModal').classList.remove('hidden');
-                // Reset form
-                this.reset();
-                // Reset any date field that might have been converted to type='date'
-                const dateInput = document.querySelector('input[name="Date of Travel"]');
-                if (dateInput && dateInput.type === 'date') {
-                    dateInput.type = 'text';
-                    dateInput.value = '';
-                }
-            } else {
-                alert('Something went wrong. Please try again.');
+        // Create a temporary hidden iframe
+        const iframe = document.createElement('iframe');
+        iframe.name = 'tempFrame';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+        
+        // Set form target to iframe
+        const originalTarget = this.target;
+        this.target = 'tempFrame';
+        
+        // Submit the form
+        this.submit();
+        
+        // Show success modal after short delay
+        setTimeout(() => {
+            document.getElementById('successModal').classList.remove('hidden');
+            this.reset();
+            
+            // Reset date field
+            const dateInput = document.querySelector('input[name="Date of Travel"]');
+            if (dateInput) {
+                dateInput.type = 'text';
+                dateInput.value = '';
             }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Something went wrong. Please try again.');
-        });
+            
+            // Clean up iframe
+            setTimeout(() => {
+                document.body.removeChild(iframe);
+                this.target = originalTarget;
+            }, 1000);
+        }, 500);
+        
+        return false;
     });
 
     function closeModal() {
@@ -238,13 +246,16 @@
         });
     }
     
-    // Handle date input placeholder
-    const dateInputs = document.querySelectorAll('input[onfocus="(this.type=\'date\')"]');
-    dateInputs.forEach(input => {
-        input.addEventListener('blur', function() {
+    // Handle date input
+    const dateInput = document.querySelector('input[name="Date of Travel"]');
+    if (dateInput) {
+        dateInput.addEventListener('focus', function() {
+            this.type = 'date';
+        });
+        dateInput.addEventListener('blur', function() {
             if (!this.value) {
                 this.type = 'text';
             }
         });
-    });
+    }
 </script>
